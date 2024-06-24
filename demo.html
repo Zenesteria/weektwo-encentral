@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/da514cb15b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Demo</title>
+  </head>
+  <body>
+    <div class="main__wrapper">
+      <nav class="navbar">
+        <a href="/" class="logo">
+          <div class="circle"></div>
+          <div class="pill"></div>
+        </a>
+
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#help">Help</a>
+          </li>
+          <li class="nav__item">
+            <a href="#features">Features</a>
+          </li>
+          <li class="nav__item">
+            <a href="#signup">Signup</a>
+          </li>
+        </ul>
+
+        <a href="demo.html" class="button__link__one"
+          >Request Demo
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </a>
+      </nav>
+
+      <h2 class="table__title">Data Storage Demo</h2>
+      <!-- <div class="form__modal">
+        <div class="overlay"></div>
+
+      </div> -->
+      <div class="table__container">
+        <table>
+          <thead>
+            <tr>
+              <th class="id__header">ID</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+              <th class="actions__header">Actions</th>
+            </tr>
+          </thead>
+          <form>
+            <tbody id="Items">
+                <!-- Content Goes Here -->
+            </tbody>
+          </form>
+        </table>
+        <div class="table__add__items" id="tableControl">
+          <button id="addItem" data-variant="link">Add Data Here.</button>
+        </div>
+      </div>
+
+      <p class="table__helper__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et saepe ipsum
+        facilis quam placeat molestias dolorem cum eos, consequuntur quasi
+        similique veniam animi iure a.
+      </p>
+    </div>
+    <div id="toaster-container"></div>
+
+    <hr />
+
+    <footer>
+      <div class="footer__top" id="signup">
+        <div class="left">
+          <h2>Try for free!</h2>
+          <p>Get limited 1 week free try our features!</p>
+        </div>
+        <div class="footer__buttons">
+          <a class="button__link__two" data-variant="secondary">Learn more</a>
+          <a href="demo.html" class="button__link__one">
+            Request Demo
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__column footer__contact__info">
+          <div class="footer__column__header">
+            <div class="logo">
+              <div class="circle"></div>
+              <div class="pill"></div>
+            </div>
+            <h3>DataWarehouse</h3>
+          </div>
+          <address>
+            Warehouse Society, 234<br />
+            Bahagia Ave Street PRBW 29281<br />
+          </address>
+          <div>
+            <p>info@warehouse.project</p>
+            <p>1-232-3434 (Main)</p>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column__header">
+            <h3>About</h3>
+          </div>
+          <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">DW News</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column__header">
+            <h3>Help</h3>
+          </div>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Q&A</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <div class="footer__column__header">
+            <h3>Social Media</h3>
+          </div>
+          <div class="social__icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <p>
+          © Datawarehouse™, 2020. All rights reserved.<br />
+          Company Registration Number: 21479524.
+        </p>
+        <span class="chat">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2.25c-2.429 0-4.817.178-7.152.521C2.87 3.061 1.5 4.795 1.5 6.741v6.018c0 1.946 1.37 3.68 3.348 3.97.877.129 1.761.234 2.652.316V21a.75.75 0 0 0 1.28.53l4.184-4.183a.39.39 0 0 1 .266-.112c2.006-.05 3.982-.22 5.922-.506 1.978-.29 3.348-2.023 3.348-3.97V6.741c0-1.947-1.37-3.68-3.348-3.97A49.145 49.145 0 0 0 12 2.25ZM8.25 8.625a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Zm2.625 1.125a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875-1.125a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </span>
+      </div>
+    </footer>
+    <script src="demo.js"></script>
+  </body>
+</html>

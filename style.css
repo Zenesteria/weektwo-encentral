@@ -601,3 +601,152 @@ p {
 }
 
 /* ---------- End of Footer ---------- */
+
+/* Table */
+.table__container {
+  margin: 0.5rem 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Sen", sans-serif;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table__title {
+  margin: 2.5rem 0.75rem 0.5rem 0.75rem;
+}
+
+.table__helper__text {
+  font-size: 14px;
+  color: var(--mute);
+  max-width: 600px;
+  line-height: 1.25rem;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.table__add__items {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input__row{
+  background-color: rgba(223, 108, 181, 0.4) !important;
+}
+.input__row:hover{
+  background-color: rgba(223, 108, 181, 0.4);
+}
+
+.form__cell input {
+  width: 100%;
+  min-height: 30px;
+  outline: none;
+  padding: 0 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.form__cell input:disabled{
+  font-weight: bold;
+  text-align: center;
+}
+
+.table__add__items button {
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+.table__container button{
+  min-width: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.table__container button:disabled{
+  opacity: 0.75;
+  cursor: default;
+}
+.table__container button[data-variant="link"] {
+  color: var(--primary);
+}
+.table__container button[data-variant="primary"] {
+  color: var(--secondary);
+}
+.table__container button[data-variant="success"] {
+  color: green;
+}
+.table__container button[data-variant="destructive"] {
+  color: red;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--primary);
+  color: white;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: center;
+  width: calc(100% / 4);
+}
+
+
+
+td:hover {
+  background-color: rgba(223, 108, 181, 0.3);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(223, 108, 181, 0.2);
+}
+
+tbody tr:hover {
+  background-color: rgba(223, 108, 181, 0.1);
+}
+
+th {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+td {
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+#toaster-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 300px;
+  z-index: 1000;
+}
+
+.toaster {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(150, 107, 219, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.toaster.show {
+  opacity: 1;
+}
